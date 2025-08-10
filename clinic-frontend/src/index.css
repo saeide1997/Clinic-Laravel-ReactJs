@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'negar';
+  src: url('/fonts/Negaar.Regular.ttf'); 
+  src:   url('/fonts/Negaar.Regular.ttf') format('truetype');
+}
+*{
+    font-family: negar;
+    direction: rtl
+}
+
+/* body{
+    font-family: 'Times New Roman', Times, serif;
+    
+
+} */
+
+.active hr{
+    @apply block;
+    
+}
+
+::-webkit-scrollbar{
+    @apply hidden
+}
+
+@media (max-width:740px){
+    .active p{
+        @applu text-white bg-primary
+    }
+}
+.rtl{
+    direction: rtl !important;
+}
